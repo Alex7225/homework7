@@ -1,7 +1,9 @@
-class Quad extends Shape1 implements Scalable{
+class Quad extends Shape1 implements Scalable {
     private static String name = "Quad";
-@Override
+
+    @Override
     public String getName() {
+        System.out.println("name is: " + name);
         return name;
     }
 

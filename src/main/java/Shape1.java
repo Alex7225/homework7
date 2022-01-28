@@ -3,12 +3,15 @@ abstract class Shape1 {
     int r, g, b;
     int x, y, z;
 
-     String getName() {
-        System.out.println("name is: "+ name);
+    String getName() {
+        System.out.println("name is: " + name);
         return null;
     }
-    Shape1(String name){
+
+    Shape1(String name) {
         this.name = name;
     }
-    Shape1(){}
+
+    Shape1() {
+    }
 }

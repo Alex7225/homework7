@@ -1,7 +1,9 @@
-class Oval extends Shape1 implements Scalable{
+class Oval extends Shape1 implements Scalable {
     private static String name = "Oval";
-@Override
+
+    @Override
     public String getName() {
+        System.out.println("name is: " + name);
         return name;
     }
 
