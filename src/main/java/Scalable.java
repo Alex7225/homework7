@@ -1,5 +1,5 @@
 interface Scalable {
-    void zoomIn();
+    void zoomIn(int a, int b, int c);
 
-    void zoomOut();
+    void zoomOut(int a, int b, int c);
 }

@@ -8,12 +8,24 @@ class Circle extends Shape1 implements Scalable {
     }
 
     @Override
-    public void zoomIn() {
+    public void zoomIn(int a, int b, int c) {
+        this.x = x + a;
+        this.y = y + b;
+        this.z = z + c;
 
     }
 
     @Override
-    public void zoomOut() {
-
+    public void zoomOut(int a, int b, int c) {
+        this.x = x - a;
+        this.y = y - b;
+        this.z = z - c;
     }
+
+    public void color(int r, int g, int b) {
+        this.r = r;
+        this.g = g;
+        this.b = b;
+    }
+
 }
