@@ -1,5 +1,11 @@
-class Quad extends Shape1 implements Scalable {
-    private static String name = "Quad";
+package figures;
+
+public class Triangel extends Shape implements Scalable {
+    private static String name = "Triangel";
+
+    public Triangel() {
+        super(name);
+    }
 
     @Override
     public String getName() {

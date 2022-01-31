@@ -1,5 +1,11 @@
-class Circle extends Shape1 implements Scalable {
+package figures;
+
+public class Circle extends Shape implements Scalable {
     private static String name = "Circle";
+
+    public Circle() {
+        super(name);
+    }
 
     @Override
     public String getName() {
@@ -12,7 +18,6 @@ class Circle extends Shape1 implements Scalable {
         this.x = x + a;
         this.y = y + b;
         this.z = z + c;
-
     }
 
     @Override
@@ -27,5 +32,4 @@ class Circle extends Shape1 implements Scalable {
         this.g = g;
         this.b = b;
     }
-
 }

@@ -1,3 +1,5 @@
+package figures;
+
 interface Scalable {
     void zoomIn(int a, int b, int c);
 

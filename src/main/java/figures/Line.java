@@ -1,27 +1,26 @@
-abstract class Shape1 {
-    public String name;
-    int r, g, b;
-    int x, y, z;
+package figures;
 
-    String getName() {
+public class Line extends Shape implements Scalable {
+    private static String name = "Line";
+
+    public Line() {
+        super(name);
+    }
+
+    @Override
+    public String getName() {
         System.out.println("name is: " + name);
-        return null;
+        return name;
     }
 
-    Shape1(String name) {
-        this.name = name;
-    }
-
-    Shape1() {
-    }
-
+    @Override
     public void zoomIn(int a, int b, int c) {
         this.x = x + a;
         this.y = y + b;
         this.z = z + c;
-
     }
 
+    @Override
     public void zoomOut(int a, int b, int c) {
         this.x = x - a;
         this.y = y - b;

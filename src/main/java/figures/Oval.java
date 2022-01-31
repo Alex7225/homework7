@@ -1,5 +1,11 @@
-class Oval extends Shape1 implements Scalable {
+package figures;
+
+public class Oval extends Shape implements Scalable {
     private static String name = "Oval";
+
+    public Oval() {
+        super(name);
+    }
 
     @Override
     public String getName() {

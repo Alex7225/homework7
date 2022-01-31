@@ -1,20 +1,24 @@
-class Line extends Shape1 implements Scalable {
-    private static String name = "Line";
+package figures;
 
-    @Override
+public abstract class Shape {
+    private String name;
+    protected int r, g, b;
+    protected int x, y, z;
+
+    protected Shape(String name) {
+        this.name = name;
+    }
+
     public String getName() {
-        System.out.println("name is: " + name);
         return name;
     }
 
-    @Override
     public void zoomIn(int a, int b, int c) {
         this.x = x + a;
         this.y = y + b;
         this.z = z + c;
     }
 
-    @Override
     public void zoomOut(int a, int b, int c) {
         this.x = x - a;
         this.y = y - b;
